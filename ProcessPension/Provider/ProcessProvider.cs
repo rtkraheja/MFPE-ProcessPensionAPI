@@ -100,7 +100,7 @@ namespace ProcessPension.Provider
 
         public HttpResponseMessage GetDisbursementMessage(ProcessPensionInput processInput)
         {
-            string uriConn2 = "http://20.62.186.31/";
+            string uriConn2 = "http://52.151.229.96/";
             HttpResponseMessage response = new HttpResponseMessage();
             using (var client1 = new HttpClient())
             {

@@ -4,3 +4,39 @@ INFO  10:29:10 Hosting environment: Development
 INFO  10:29:10 Hosting environment: Development
 INFO  10:29:10 Content root path: C:\Users\Ritik\source\repos\ProcessPension
 INFO  10:29:10 Content root path: C:\Users\Ritik\source\repos\ProcessPension
+INFO  06:18:16 Application started. Press Ctrl+C to shut down.
+INFO  06:18:16 Application started. Press Ctrl+C to shut down.
+INFO  06:18:16 Hosting environment: Development
+INFO  06:18:16 Hosting environment: Development
+INFO  06:18:16 Content root path: E:\MFPE\ProcessPensionAPI\ProcessPension
+INFO  06:18:16 Content root path: E:\MFPE\ProcessPensionAPI\ProcessPension
+INFO  06:18:49 Pensioner details invoked from Client Input
+ERROR 06:25:53 Exception OccuredSystem.AggregateException: One or more errors occurred. (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+ ---> System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ProcessPension.Provider.ProcessProvider.GetDisbursementMessage(ProcessPensionInput processInput) in E:\MFPE\ProcessPensionAPI\ProcessPension\Provider\ProcessProvider.cs:line 113
+INFO  06:27:42 Source:[::1] Request: POST https localhost:44394/api/ProcessPension/ProcessPension  {"name":"Shubham","dateOfBirth":"1997-08-18T00:00:00","pan":"BCFPN9890I","aadhaarNumber":"907493726178","pensionType":1} Responded with [204] in 533103ms
+INFO  06:27:42 Source:[::1] Request: POST https localhost:44394/api/ProcessPension/ProcessPension  {"name":"Shubham","dateOfBirth":"1997-08-18T00:00:00","pan":"BCFPN9890I","aadhaarNumber":"907493726178","pensionType":1} Responded with [204] in 533103ms
+INFO  06:55:48 Application started. Press Ctrl+C to shut down.
+INFO  06:55:48 Application started. Press Ctrl+C to shut down.
+INFO  06:55:48 Hosting environment: Development
+INFO  06:55:48 Hosting environment: Development
+INFO  06:55:48 Content root path: E:\MFPE\ProcessPensionAPI\ProcessPension
+INFO  06:55:48 Content root path: E:\MFPE\ProcessPensionAPI\ProcessPension
+INFO  06:56:47 Pensioner details invoked from Client Input
+INFO  06:57:12 Source:[::1] Request: POST https localhost:44394/api/ProcessPension/ProcessPension  {"name":"Shubham","dateOfBirth":"1997-08-18T00:00:00","pan":"BCFPN9890I","aadhaarNumber":"907493726178","pensionType":1} Responded with [200] in 25660ms
+INFO  06:57:12 Source:[::1] Request: POST https localhost:44394/api/ProcessPension/ProcessPension  {"name":"Shubham","dateOfBirth":"1997-08-18T00:00:00","pan":"BCFPN9890I","aadhaarNumber":"907493726178","pensionType":1} Responded with [200] in 25660ms
