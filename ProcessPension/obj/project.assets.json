@@ -5380,11 +5380,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ritik\\source\\repos\\ProcessPension\\ProcessPension.csproj",
+      "projectUniqueName": "E:\\MFPE\\ProcessPensionAPI\\ProcessPension\\ProcessPension.csproj",
       "projectName": "ProcessPension",
-      "projectPath": "C:\\Users\\Ritik\\source\\repos\\ProcessPension\\ProcessPension.csproj",
+      "projectPath": "E:\\MFPE\\ProcessPensionAPI\\ProcessPension\\ProcessPension.csproj",
       "packagesPath": "C:\\Users\\Ritik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ritik\\source\\repos\\ProcessPension\\obj\\",
+      "outputPath": "E:\\MFPE\\ProcessPensionAPI\\ProcessPension\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -5970,11 +5970,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ritik\\source\\repos\\ProcessPensionTest\\ProcessPensionTest.csproj",
+      "projectUniqueName": "E:\\MFPE\\ProcessPensionAPI\\ProcessPensionTest\\ProcessPensionTest.csproj",
       "projectName": "ProcessPensionTest",
-      "projectPath": "C:\\Users\\Ritik\\source\\repos\\ProcessPensionTest\\ProcessPensionTest.csproj",
+      "projectPath": "E:\\MFPE\\ProcessPensionAPI\\ProcessPensionTest\\ProcessPensionTest.csproj",
       "packagesPath": "C:\\Users\\Ritik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ritik\\source\\repos\\ProcessPensionTest\\obj\\",
+      "outputPath": "E:\\MFPE\\ProcessPensionAPI\\ProcessPensionTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5995,8 +5995,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ritik\\source\\repos\\ProcessPension\\ProcessPension.csproj": {
-              "projectPath": "C:\\Users\\Ritik\\source\\repos\\ProcessPension\\ProcessPension.csproj"
+            "E:\\MFPE\\ProcessPensionAPI\\ProcessPension\\ProcessPension.csproj": {
+              "projectPath": "E:\\MFPE\\ProcessPensionAPI\\ProcessPension\\ProcessPension.csproj"
             }
           }
         }
