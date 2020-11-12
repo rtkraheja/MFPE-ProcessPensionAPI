@@ -11,10 +11,10 @@ namespace ProcessPension
         public DateTime DateOfBirth { get; set; }
         public string PAN { get; set; }
         public string AadhaarNumber { get; set; }
-        public PensionTypeValue PensionType { get; set; }
+        public PensionType PensionType { get; set; }
     }
 
-    public enum PensionTypeValue
+    public enum PensionType
     {
         Self = 1,
         Family = 2

@@ -25,7 +25,7 @@ namespace ProcessPensionControllerTest
             Name = "Ritik",
             PAN = "BCFPN1234F",
             DateOfBirth = new DateTime(2000, 01, 01),
-            PensionType = PensionTypeValue.Family,
+            PensionType = PensionType.Family,
             AadhaarNumber = "222222223333",
         };
 

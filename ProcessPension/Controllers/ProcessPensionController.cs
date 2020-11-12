@@ -62,9 +62,15 @@ namespace ProcessPension.Controllers
                 mvc.DateOfBirth = new DateTime(2000, 01, 01);
                 mvc.BankType = 1;
                 mvc.AadharNumber = "***";
-                mvc.Status = 20;
+                mvc.Status = 0;
 
-                return NotFound();
+                processResponse = new ProcessResponse()
+                {
+                    Status = 0,
+                    PensionAmount = mvc.PensionAmount
+                };
+
+                return BadRequest(processResponse);
             }
 
 
@@ -72,13 +78,13 @@ namespace ProcessPension.Controllers
             double pensionAmount;
 
             ValueforCalCulation pensionerInfo = _repo.GetCalculationValues(client.AadhaarNumber);
-            pensionAmount = CalculatePensionAmount(pensionerInfo.SalaryEarned, pensionerInfo.Allowances, pensionerInfo.BankType, pensionerInfo.PensionType);
+            pensionAmount = CalculatePensionAmount(pensionerInfo.SalaryEarned, pensionerInfo.Allowances, pensionerInfo.BankType, processPensionInput.PensionType);
 
             int statusCode;
 
             PensionDetail mvcClientOutput = new PensionDetail();
-
-            if (client.AadhaarNumber.Equals(pensionDetail.AadharNumber))
+            
+            if (client.AadhaarNumber.Equals(pensionDetail.AadharNumber) && client.PAN.Equals(pensionDetail.Pan) && client.Name.Equals(pensionDetail.Name))//&& client.PensionType.CompareTo(pensionDetail.PensionType)==0
             {
                 mvcClientOutput.Name = pensionDetail.Name;
                 mvcClientOutput.Pan = pensionDetail.Pan;
@@ -87,7 +93,7 @@ namespace ProcessPension.Controllers
                 mvcClientOutput.PensionType = pensionerInfo.PensionType;
                 mvcClientOutput.BankType = pensionerInfo.BankType;
                 mvcClientOutput.AadharNumber = pensionDetail.AadharNumber;
-                mvcClientOutput.Status = 20;
+                mvcClientOutput.Status = 10;
             }
             else
             {
@@ -100,7 +106,13 @@ namespace ProcessPension.Controllers
                 mvcClientOutput.AadharNumber = "****";
                 mvcClientOutput.Status = 21;
 
-                //return mvcClientOutput;
+                processResponse = new ProcessResponse()
+                {
+                    Status = 0,
+                    PensionAmount = mvcClientOutput.PensionAmount
+                };
+
+                return Ok(processResponse);
             }
 
             ProcessPensionInput input = new ProcessPensionInput();
