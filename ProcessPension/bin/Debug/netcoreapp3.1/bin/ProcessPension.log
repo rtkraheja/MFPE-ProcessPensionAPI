@@ -322,3 +322,9 @@ INFO  06:43:14 Source:[::1] Request: POST https localhost:44394/api/ProcessPensi
 INFO  06:43:27 Pensioner details invoked from Client Input
 INFO  06:43:29 Source:[::1] Request: POST https localhost:44394/api/ProcessPension/ProcessPension/  {"Name":"Shubham","DateOfBirth":"2017-09-28T22:59:00","PAN":"BCFPN9890I","AadhaarNumber":"907493726178","PensionType":1} Responded with [200] in 1418ms
 INFO  06:43:29 Source:[::1] Request: POST https localhost:44394/api/ProcessPension/ProcessPension/  {"Name":"Shubham","DateOfBirth":"2017-09-28T22:59:00","PAN":"BCFPN9890I","AadhaarNumber":"907493726178","PensionType":1} Responded with [200] in 1418ms
+INFO  12:12:01 Application started. Press Ctrl+C to shut down.
+INFO  12:12:01 Application started. Press Ctrl+C to shut down.
+INFO  12:12:01 Hosting environment: Development
+INFO  12:12:01 Hosting environment: Development
+INFO  12:12:01 Content root path: E:\MFPE\ProcessPensionAPI\ProcessPension
+INFO  12:12:01 Content root path: E:\MFPE\ProcessPensionAPI\ProcessPension
